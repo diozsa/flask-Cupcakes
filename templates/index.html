@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/minty/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>Cupcakes</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="display-3">This is what's in store for you!</h1>
+        
+        <ul id="cupcakes-ul">
+            <!-- list of cupcakes from JS -->
+        </ul>
+        <br>
+        <h2 class="display-5">Add a new cupcake!</h2>
+
+        <form id="cupcake-form">
+            <div class="form-group">
+              <label for="flavor">Flavor: </label>
+              <input class="form-control" name="flavor" id="flavor">
+            </div>
+          
+            <div class="form-group">
+              <label for="size">Size: </label>
+              <input class="form-control" name="size" id="size">
+            </div>
+          
+            <div class="form-group">
+              <label for="rating">Rating: </label>
+              <input class="form-control" type="number" name="rating" id="rating">
+            </div>
+          
+            <div class="form-group">
+              <label for="image">Image: </label>
+              <input class="form-control" name="image" id="image">
+            </div>  
+
+            <div>
+            <button class="btn btn-success">Add!</button>
+            </div>
+        </form>
+          
+          <script src="https://unpkg.com/jquery"></script>
+          <script src="https://unpkg.com/axios/dist/axios.js"></script>
+          <script src="/static/cupcakes.js"></script>
+          
+    </div>
+    
+</body>
+</html>
