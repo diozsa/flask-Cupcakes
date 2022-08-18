@@ -82,7 +82,7 @@ def update_cupcake(cupcake_id):
 
 
 
-@app.route("/api.cupcakes/<int:cupcake_id>", methods=["DELETE"])
+@app.route("/api/cupcakes/<int:cupcake_id>", methods=["DELETE"])
 def delete_cupcake(cupcake_id):
     """Delete cupcake by ID and show confirmation
         Respond with JSON like {message: "Deleted"}
